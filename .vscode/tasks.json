@@ -8,8 +8,12 @@
                 "/Zi",
                 "/EHsc",
                 "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "/Fe${workspaceFolder}\\broken-key.exe",
+                "${workspaceFolder}\\broken-key.cpp",
+                "${workspaceFolder}\\AST\\ASTNode.cpp",
+                "${workspaceFolder}\\AST\\Function.cpp",
+                "${workspaceFolder}\\AST\\Body.cpp",
+                "${workspaceFolder}\\AST\\Statements.cpp"
             ],
             "options": {
                 "cwd": "${fileDirname}"

@@ -1,13 +1,10 @@
 #include<iostream>
 #include<list>
-#include<string>
-#include<vector>
 #include<fstream>
 #include<sstream>
+#include"broken-key.h"
 
 using namespace std;
-
-vector<string> lex(string fileName);
 
 int main(int argc, char const *argv[])
 {
@@ -18,7 +15,7 @@ int main(int argc, char const *argv[])
         cout << "USAGE:\n\tbroken-key.exe <File-To-Compile>" << '\n';
         return 1;
     }
-    cout << "Herro!" << endl;
+    //cout << "Herro!" << endl;
     lexxer = lex(argv[1]);
 
     if(lexxer.empty())
